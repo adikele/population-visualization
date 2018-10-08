@@ -6,7 +6,7 @@ from bokeh.plotting import figure, output_file, show
 8.10.18 Working! 
 TESTS:
 1. Tested for different countries. (seems ok)
-2. Now tested for ASIA --- negative data ??? and why is it showing e+240 ??
+2. WRONG RESULTS: for ASIA --- negative data ??? and why is it showing e+240 ???
 
 PROBLEM STATEMENT: Plot the population of a user-entered country.
 
@@ -23,7 +23,7 @@ Run this file from an IDE. Program asks user to input name of a country.
 Enter name beginning with a capital letter and press enter.
 Example of a country name:
 India
-Program should run and display the plot in a broswer.
+Program should run and display the plot in a browser.
 
 REQUIRED CONDITIONS:
 1. Program requires Internet to access api.population.io site

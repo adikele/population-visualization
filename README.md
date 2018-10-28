@@ -17,10 +17,10 @@ can be found here: https://bokeh.pydata.org/en/latest/
 -- Program file: one_country_plot_v2.py
 Revised version of one_country_plot.py with improved user-entry validation 
 
--- Program file population_plot_2countries.ipynb
-Program plots the population of two user-entered country during a specific
-range of years (2013 - 2018), by getting data from http://api.population.io
-and using Bokeh library for the plot.
+-- Program file: population_plot_2countries.ipynb
+New features compared to one_country_plot.py
+(i) improved user-entry validation and 
+(ii) user can now enter two countries 
 
 HOW TO RUN THE ABOVE PROGRAMS:
 The program files use python 3.7, which must be installed. 
@@ -28,13 +28,13 @@ Save the python program files and also install the
 accompanying dependencies.
 The dependencies are: (i) json (ii) requests (iii) bokeh.
 
-To run the file one_country_plot_v2.py and one_country_plot.py
-Run the file one_country_plot.py from an IDE. 
+-- To run the file one_country_plot_v2.py and one_country_plot.py
+Run the files from an IDE. 
 Program asks the user to input name of a country.
 When program runs successfully, it displays the plot in a broswer.
 Screenshot of a sample output is in the project folder. 
 
-To run the file population_plot_2countries.ipynb
+-- To run the file population_plot_2countries.ipynb
 Run the file  population_plot_2countries.ipynb from Jupyter notebook IDE. 
 Program asks user to input names of two countries.
 If user entered country is not valid, that is, if country name is

@@ -7,27 +7,39 @@ This project will provide different visualization aids, beginning
 with a line graph, to plot population data of user-entered countries.
 
 PROGRAM DESCRIPTION:
-Program file: one_country_plot.py
+-- Program file: one_country_plot.py
 Program plots the population of a user-entered country during a specific
 range of years (2013 - 2018), by using a population tracker website's APIs:
 http://api.population.io
 The project uses Bokeh library for the plots.The documentation for Bokeh 
 can be found here: https://bokeh.pydata.org/en/latest/
 
-Program file: one_country_plot_v2.py
+-- Program file: one_country_plot_v2.py
 Revised version of one_country_plot.py with improved user-entry validation 
 
-HOW TO RUN THE PROGRAM:
-To run the file one_country_plot_v2.py
-1. This program uses python 3.7, which must be installed. 
-Save this python program file and also install the 
+-- Program file population_plot_2countries.ipynb
+Program plots the population of two user-entered country during a specific
+range of years (2013 - 2018), by getting data from http://api.population.io
+and using Bokeh library for the plot.
+
+HOW TO RUN THE ABOVE PROGRAMS:
+The program files use python 3.7, which must be installed. 
+Save the python program files and also install the 
 accompanying dependencies.
 The dependencies are: (i) json (ii) requests (iii) bokeh.
-2. Run the file one_country_plot.py from an IDE. 
-3. Program asks the user to input name of a country.
-Example of a country name:
-India
-Program should run and display the plot in a broswer.
+
+To run the file one_country_plot_v2.py and one_country_plot.py
+Run the file one_country_plot.py from an IDE. 
+Program asks the user to input name of a country.
+When program runs successfully, it displays the plot in a broswer.
+Screenshot of a sample output is in the project folder. 
+
+To run the file population_plot_2countries.ipynb
+Run the file  population_plot_2countries.ipynb from Jupyter notebook IDE. 
+Program asks user to input names of two countries.
+If user entered country is not valid, that is, if country name is
+not found in the database, user is asked to enter another name.
+When program runs successfully, it displays the plot in a browser.
 Screenshot of a sample output is in the project folder. 
 
 REQUIRED CONDITIONS:

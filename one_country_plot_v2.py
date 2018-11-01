@@ -1,4 +1,4 @@
-#file nam: one_country_plot_v2.py
+#file name: one_country_plot_v2.py
 import json
 import requests
 from bokeh.plotting import figure, output_file, show
@@ -17,7 +17,7 @@ range of years (2013 - 2018), by getting data from http://api.population.io
 and using Bokeh library for the plot.
 
 HOW TO RUN THE PROGRAM:
-This program used python 3.7 
+This program uses python 3.7 
 Save this python program file and the accompanying dependencies.
 The dependencies are: (i) json (ii) requests (iii) bokeh
 Run this file from an IDE. Program asks user to input name of a country.
@@ -42,6 +42,8 @@ from the website's collection, program would stop running.
 In this file one_country_plot_v2.py: If a user-entered country name does not match the country names from the
 website's collection, the user is prompted to enter another country name.
 '''
+
+API_ADDRESS = "http://api.population.io:80/1.0/countries"
 
 def get_pop_data(num_years, name_country):
     ''' this function takes as parameters:
@@ -106,7 +108,7 @@ def input_validataion(name_country):
     Function returns true if name_country exists, false otherwise
     '''
     #print (name_country)  #CHECK
-    api_address = "http://api.population.io:80/1.0/countries"
+    api_address = API_ADDRESS
     response = requests.get(api_address)
     response_py = response.json()
     # print (response_str) #prints a dict with the countries as a list as expected
